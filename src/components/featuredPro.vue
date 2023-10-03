@@ -39,7 +39,7 @@
       <div class="card  " style="width: 18rem;">
   <img src="../assets/para.png" class="card-img-top img-fluid" alt="...">
   <div class="card-body">
-    <!-- <h5 class="card-title">Card title</h5> -->
+    
     <h5 class="card-title">#1200 Paracetamol</h5>
     <p>pain relief</p>
     
@@ -118,15 +118,9 @@ export default {
 </script>
 
 <style>
-/* @font-face {
-  font-family: 'Custom'; /* Provide a name for your font */
-  /* src: url('../assets/font/Millik\ Regular.otf') format('otf');
-     
-  font-weight: normal;
-  font-style: normal;
-} */ 
+
  .fea{
-	font-family:'Custom';
+	
   color:#258576;
  }.card{
     padding:0;
@@ -138,16 +132,5 @@ export default {
   .card{
     border:none !important;
   }
-  @font-face {
-  font-family: 'milki'; /* Provide a name for your font */
-  /* src: url('./assets/font/Inter-Regular.otf') format('otf'); */
-  src: url('../assets/font/Millik\ Regular.otf')format('otf');
-     
-  font-weight:normal;
-  font-style:normal;
-}
- .te{
-	font-family:'milki' !important;
-   
-  } 
+  
 </style>

@@ -12,17 +12,41 @@
         <b-nav-item href="#" class="ma ml-5" ><router-link to="/" class="rou">Home</router-link></b-nav-item>
         <b-nav-item href="# " class="ml-5  mar ma ">
            <router-link to="/about" class="rou">About Us</router-link></b-nav-item>
-        <b-nav-item-dropdown text="Products" right  class="ml-5 mar">
-          <b-dropdown-item href="#">EN</b-dropdown-item>
-          <b-dropdown-item href="#">ES</b-dropdown-item>
-          <b-dropdown-item href="#">RU</b-dropdown-item>
-          <b-dropdown-item href="#">FA</b-dropdown-item>
+        <b-nav-item-dropdown text="Products" right  class="ml-5 mar "  
+    menu-class="w-100">
+          <div class="">
+            <div class="col-2"> <b-dropdown-item href="#">EN</b-dropdown-item></div>
+            <div class="col-2"> <b-dropdown-item href="#">ES</b-dropdown-item></div>
+            <div class="col-2"> <b-dropdown-item href="#">RU</b-dropdown-item></div>
+            <div class="col-2"><b-dropdown-item href="#">FA</b-dropdown-item></div>
+          </div>
+          
+         
+         
+          
         </b-nav-item-dropdown>
-        <b-nav-item href="#"  class="ml-5  mar ma">Blog</b-nav-item>
-       
+        <!-- <b-nav-item href="#"  class="ml-5  mar ma">Blog</b-nav-item> -->
        
       </b-navbar-nav>
+      
+      <div>
+  <!-- <b-dropdown
+    text="Block Level Dropdown Menu"
+    block
+    variant="primary"
+    class="dr"
+    menu-class="w-100"
+  >
+  <div class="dr">
+    <b-dropdown-item href="#">Action</b-dropdown-item>
+    <b-dropdown-item href="#">Another action</b-dropdown-item>
+    <b-dropdown-item href="# ">Something else here</b-dropdown-item>
+  </div>
+    
+  </b-dropdown> -->
 
+  
+</div>
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
         <b-nav-item href="#"><button class="btn-lg bt button-nav mar">Contact Us</button></b-nav-item>
@@ -33,12 +57,17 @@
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
+
+  
 </div>
 
 
-    
+
+
+
     
   </div>
+ 
   </div>
 </template>
 
@@ -51,9 +80,28 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-*{
-  font-family:"CustomFont"
+
+
+/* Ensure the dropdown menu is full width */
+.custom-dropdown-menu .container-fluid {
+  width: 100%;
 }
+
+/* Optional: Style the dropdown toggle as per your design */
+.navbar .nav-link.dropdown-toggle {
+  color: #333;
+}
+.dr{
+  /* width: 100!important;
+  left: 0 !important;
+  right: 0 !important; */
+  position:absolute;
+   left:20; 
+   width: 100%;
+}
+/* *{ */
+  /* font-family:"CustomFont" */
+/* } */
 /* @font-face {
   font-family: 'CustomFont'; /* Provide a name for your font */
   /* src: url('../assets/font/Inter-VariableFont_slnt\,wght.ttf') format('ttf');
@@ -61,6 +109,10 @@ export default {
   font-weight: normal;
   font-style: normal;
 } */
+
+.vr{
+  width:100v;
+}
 .imgf{
   width:32px;
   height: 32px;

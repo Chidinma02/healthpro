@@ -24,7 +24,7 @@
 			<div class="item"><img alt="" src="../assets/f2-min.png" class="img-fluid ml-5 mr-5 ml mtwo "></div>
 			<div class="item"><img alt="" src="../assets/Group-69-min.png" class="img-fluid ml-5 mr-5 ml mthr"></div>
 			<div class="item"><img alt="" src="../assets/f4-min.png" class="img-fluid ml-5 mr-5 ml mfour"></div>
-			<div class="item"><img alt="" src="../assets/f5-min.png" class="img-fluid ml-5 mr-5  mu"></div>
+			<div class="item"><img alt="" src="../assets/f5-min.png" class="img-fluid ml-5 mr-5 "></div>
             <div class="item"><img alt="" src="../assets/f6-min.png" class="img-fluid ml-5 mr-5 ml msix"></div>
             <div class="item"><img alt="" src="../assets/f7-min.png" class="img-fluid ml-5 mr-5 ml mseven"></div>
 		</div>
@@ -43,9 +43,7 @@ name:'ourProject'
 </script>
 
 <style>
-.f{
-	margin-top:-100px !important; 
-}
+
 .ml{
     margin-right:200px !important;
 	width:220.75px;
@@ -79,16 +77,7 @@ name:'ourProject'
 	width:205.57px;
 	height:60.78px;
 }
-@font-face {
-  font-family: 'CustomFont'; /* Provide a name for your font */
-  src: url('../assets/font/Millik\ Regular.otf') format('otf');
-     
-  font-weight: normal;
-  font-style: normal;
-}
- *{
-	font:'CustomFont';
- }
+
 .slider-area h2 {
 	text-align: center;
 	font-family: impact;

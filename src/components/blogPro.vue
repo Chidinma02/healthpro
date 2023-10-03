@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container mt-5 ">
+    <!-- <div class="container mt-5 ">
       <div class="row mt-5">
         <div class="col-12">
           <h3 class="text-center blog cont">Our Blog</h3>
@@ -44,7 +44,7 @@
         <button class="btn-lg bt button-nav mar mt-4 text-center">Read More</button>
       </div>
     </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

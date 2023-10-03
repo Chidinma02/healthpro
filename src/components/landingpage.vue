@@ -37,18 +37,7 @@ export default {
 </script>
 
 <style>
-@font-face {
-  font-family: 'milki'; /* Provide a name for your font */
-  /* src: url('./assets/font/Inter-Regular.otf') format('otf'); */
-  src: url('../assets/font/Millik\ Regular.otf')format('otf');
-     
-  font-weight:normal;
-  font-style:normal;
-}
- .te{
-	font-family:'milki' !important;
-   
-  } 
+
 .what{
   color:#D41420;
 }
@@ -83,10 +72,18 @@ color:#FCB912 !important;
 }
 h2{
   font-size: 50px !important;
-  font-family: 'Custom' !important;
+ 
 
 }
 
-
-
+@font-face {
+  font-family: 'milk'; 
+  src: url('../assets/font/Millik\ Regular.otf') format('otf');
+     
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+  font-family: 'milk' !important;
+}
 </style>

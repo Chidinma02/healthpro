@@ -8,30 +8,33 @@
           <p>What is on your mind about us</p>
         </div>
     </div>
-  <div class="accordion" id="accordionExample">
-    <div class="card">
-      <div class="card-header " id="headingOne" data-toggle="collapse" data-target="#collapseOne">
-        <span class="icon " ><i class="fas fa-chevron-down"></i></span>
-       <span class="ml-3">How do i get my Products delivered to my location.</span> 
-      </div>
-      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-        <div class="card-body ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facilis dicta sit dolorum quisquam esse necessitatibus voluptate quidem at non placeat, ipsam unde officiis. Asperiores veniam tempora labore ab id.
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo">
-        <span class="icon"><i class="fas fa-chevron-down"></i></span>
-        <span class="ml-3">Are there extra charges for product delivery.</span> 
-      </div>
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-        <div class="card-body">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut commodi ea asperiores voluptates sequi consectetur temporibus, quis doloribus nobis provident blanditiis, non tempore beatae. Aliquid vel laudantium aut sunt ipsum.
-        </div>
-      </div>
-    </div>
-    <!-- Add more accordion items as needed -->
+  
+  <div class="accordion" role="tablist">
+    <b-card no-body class="mb-1">
+      <b-card-header header-tag="header" class="p-1" role="tab">
+        <P block v-b-toggle.accordion-1 variant="info">+ How do i get my Products delivered to my location.</P>
+        
+      </b-card-header>
+      <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
+        <b-card-body>
+          
+          <b-card-text>{{ text }}</b-card-text>
+        </b-card-body>
+      </b-collapse>
+    </b-card>
+
+    <b-card no-body class="mb-1">
+      <b-card-header header-tag="header" class="p-1" role="tab">
+        <p block v-b-toggle.accordion-2 variant="info">+ Are there extra charges for product delivery.</p>
+      </b-card-header>
+      <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
+        <b-card-body>
+          <b-card-text>{{ second }}</b-card-text>
+        </b-card-body>
+      </b-collapse>
+    </b-card>
+
+   
   </div>
 
   <div class="subscribe">
@@ -52,14 +55,28 @@
 
 <script>
 export default {
+  data() {
+      return {
+        text: `
+          Our products will be delivered to your request
+          located via our trusted courier agency FEDEX EXPRESS(Red star logistics) with
+          there offices all over the country.
+        `,
+        second:`
+         No extra charges for product delivery.
+        `
+      }
+    },
  name:'freQuent'
+ 
 }
+
 </script>
 
 <style>
 .de{
   color:#18564C;
-    font-family: 'Customfont';
+  
     font-weight:bold;
 }
 .so{
@@ -84,8 +101,7 @@ export default {
   background-color:#18564C;
   margin-top:200px;
   color:white;
-  /* padding-top:20px;
-  padding-top:20px; */
+  
   border-radius:10px;
   display: flex;
       justify-content: center;
@@ -125,4 +141,6 @@ template{
     .icon::before {
       content: '+';
     }
+
+
 </style>

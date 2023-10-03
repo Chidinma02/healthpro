@@ -27,7 +27,7 @@ export default {
 
 <style>
 .h1-dis{
-  font-family: 'custom-font';
+
   color:#18564C;
   font-weight:bold;
 }
@@ -36,14 +36,14 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
-      /* height: 100vh; Adjust this value as needed */
+      
     
 }
 .main-div{
      background-image: url("../assets/new\ \(2\).png");
     height:90%;
-    background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center;
+  background-repeat: no-repeat; 
   background-size: cover; 
  
   padding-top:10px !important;
@@ -51,16 +51,5 @@ export default {
   margin:0 !important
 }
 
-@font-face {
-  font-family: 'milki'; /* Provide a name for your font */
-  /* src: url('./assets/font/Inter-Regular.otf') format('otf'); */
-  src: url('../assets/font/Millik\ Regular.otf')format('otf');
-     
-  font-weight:normal;
-  font-style:normal;
-}
- .te{
-	font-family:'milki' !important;
-   
-  } 
+
 </style>
