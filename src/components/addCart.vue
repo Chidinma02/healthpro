@@ -153,9 +153,7 @@ export default {
 </script>
 
 <style>
-*{
-  color:black;
-}
+
 .ea{
   margin-bottom: 0; 
   padding-bottom: 0; 
