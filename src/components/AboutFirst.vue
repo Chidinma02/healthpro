@@ -43,7 +43,7 @@
 </div>
             </div>
         </div>
-      
+    
      </div>
 </template>
 
@@ -63,7 +63,7 @@ export default {
       display: flex !important;
       justify-content: center !important;
       align-items: center !important;
-      /* height: 100vh; Adjust this value as needed */
+    
     }
     .carousel-caption{
         top: 50%;

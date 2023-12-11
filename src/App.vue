@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-   <HelloWorld></HelloWorld>
+   <HelloWorld v-if="!$route.meta.hideNavigation"></HelloWorld>
     <router-view/>
-    <HomeFooter></HomeFooter>
+    <HomeFooter v-if="!$route.meta.hideNavigation"></HomeFooter>
   </div>
 </template>
 <script>
@@ -16,13 +16,7 @@ export default {
 }
 </script>
 <style>
-@font-face {
-  font-family: 'CustomFont'; /* Provide a name for your font */
-  src: url('./assets/font/Inter-Regular.otf') format('otf');
-     
-  font-weight: normal;
-  font-style: normal;
-}
+
  
 *{
   padding: 0px ;
@@ -32,12 +26,13 @@ export default {
 #app {
 
   font-family: 'CustomFont' ;
-  /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; 
-  /* text-align: center; */
+  
   
 }
-
+.head{
+ /* ? margin:0px !important; */
+  /* padding:0px !important; */
+}
 
 
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <div class="container mt-5 ">
+    <div class="container mt-5 ">
       <div class="row mt-5">
         <div class="col-12">
           <h3 class="text-center blog cont">Our Blog</h3>
@@ -44,7 +44,7 @@
         <button class="btn-lg bt button-nav mar mt-4 text-center">Read More</button>
       </div>
     </div>
-    </div> -->
+    </div>
   </div>
 </template>
 
@@ -58,7 +58,7 @@ export default {
 .co{
   display: flex;
       justify-content: center; 
-      /* align-items: center; */
+      
       height: 15vh;
       margin-bottom:100px;
       margin-top:20px;
@@ -73,7 +73,7 @@ export default {
   font-size: 16px !important;
 }
 .car{
-  /* box-shadow: 5px 10px #888888; */
+  
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .cont{

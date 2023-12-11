@@ -50,7 +50,7 @@
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
         <b-nav-item href="#"><button class="btn-lg bt button-nav mar">Contact Us</button></b-nav-item>
-        <b-nav-item href="#" class="mt-2 ma"><img src="../assets/ShoppingCart.png" class="imgf ml-5"></b-nav-item>
+        <b-nav-item href="#" class="mt-2 ma"><router-link to="/cart" class="rou"><img src="../assets/ShoppingCart.png" class="imgf ml-5"></router-link></b-nav-item>
       
 
        

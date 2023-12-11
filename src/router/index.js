@@ -3,6 +3,9 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import specView from '../views/specView.vue'
 import addView  from '@/views/AddView.vue'
+import CartView from '@/views/CartView.vue'
+import CartChoView from '../views/CartChoView.vue'
+import LoginView from '../views/LoginView.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -30,10 +33,28 @@ const routes = [
     name: 'specView',
     component: specView
   },
+  
   {
     path: '/add',
     name: 'addView',
     component: addView
+  },
+  {
+    path: '/cart',
+    name: 'CartView',
+    component: CartView
+  },
+  
+  {
+    path: '/cartchoose',
+    name: 'CartChoView',
+    component: CartChoView
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: LoginView,
+    meta: { hideNavigation: true }
   },
 ]
 

@@ -22,7 +22,8 @@
 
     
     <b-navbar-nav class="ms-auto">
-      <b-form-input size="sm" class="mr-sm-2" placeholder="Search" fr></b-form-input>
+      <!-- <b-form-input class="uy" placeholder="Search" ></b-form-input> -->
+      <input class="uy" placeholder="search">
      
     </b-navbar-nav>
   </b-collapse>
@@ -70,6 +71,11 @@ export default {
 </script>
 
 <style>
+
+.pharnav{
+  color:black !important;
+  text-decoration:none !important;
+}
 .bn{
   background-color:#026640;
   padding-left:0px !important;
@@ -82,5 +88,15 @@ export default {
   text-decoration: none;
   font-size:12px;  
 }
-
+.fr{
+  width:100px;
+}
+.uy{
+ width:350px;
+ padding-left:20px;
+ border:1px solid #E0E0E0;
+ border-radius:15px;
+ padding-top:2px;
+ padding-bottom:2px;
+}
 </style>

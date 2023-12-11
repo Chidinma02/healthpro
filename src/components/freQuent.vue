@@ -1,7 +1,7 @@
 <template>
  
 
-  <div class="container can mt-">
+  <div class="container can mt-5">
     <div class="row">
         <div class="col-12 so">
           <h3 class="de">Frequently asked Questions and Answers</h3>
@@ -114,7 +114,7 @@ export default {
       padding-bottom:40px;
 }
 template{
-  background-color:white !important;
+   background-color:white !important; 
 }
 .can{
   background-color:white !important;

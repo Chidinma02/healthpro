@@ -3,12 +3,13 @@
         <div class="row">
       <div class="col-md-6 col-12">
         <div class="ft mt-5">
+        
           <h2 class="mt-5 te">Our love for <span class="humanity">Humanity</span> drives our <span class="passion">passion</span>  for <span class="healthcare">healthcare.</span> </h2>
         <br>
 
         </div>
         <p>Bridging unmet healthcare need.</p>
-        <button class="btn-lg bt button-nav mar mt-4" style="color:white">View products</button>
+        <button class="btn-lg bt button-nav mar mt-4" style="color:white"  @click="navigateToAbout">View products</button>
       </div>
       <div class="col-md-6 col-12"><img src="../assets/new.png" class="img-fluid mt-3"></div>
     
@@ -20,7 +21,7 @@
        <div class="col-lg-5 col-12 mt-5 pt-5">
         <h5 class="what">What we do</h5>
         <p class="mt-3">We are a pharmaceutical company focused on the marketing and distribution of pharmaceutical healthcare products. But Also involved in bridging unmet healthcare needs in medical tourism, providing Diagnostic Equipment's for medical institutions and  medical training's( for Medical Personnel & Para-Medics) thereby ensuring a more knowledgeable and skillful health team.</p>
-        <button class="btn-lg bt button-nav mar mt-5">Read More</button>
+        <button class="btn-lg bt button-nav mar mt-5" @click="navigateToAbout">Read More</button>
       </div>
        <div class="col-lg-7 col-12 mt-5">
         <img src="../assets/Group 3.png" class="img-fluid">
@@ -32,7 +33,12 @@
 
 <script>
 export default {
-   name:'LandingPage'
+   name:'LandingPage',
+   methods: {
+    navigateToAbout() {
+      this.$router.push('/product'); // Navigate to the '/about' route
+    },
+  },
 }
 </script>
 

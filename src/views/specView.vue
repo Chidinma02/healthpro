@@ -2,6 +2,7 @@
     <div >
        
        <specProduct></specProduct>
+       
     </div>
 </template>
 
@@ -11,7 +12,8 @@ import specProduct from '@/components/specProduct.vue'
 export default {
 name:'specView',
 components:{
-  specProduct
+  specProduct,
+
 
 }
 }
