@@ -5,13 +5,13 @@
         
       
         <h3 class="pr mt-3">Products</h3>
-        <p>{{ cart.length }}</p>
+        <p>{{ cart.length }} cccccccc</p>
       
 
         <div class="row mt-3">
             <div class ="col-md-3 col-12"  v-for="post in this.posts " :key="post.id">
                 <div class>
-                    <img src="../assets/chd.png" class="container-fluid we" >
+                      <img src="../assets/chd.png" class="container-fluid we" > 
                     <!-- <img :src="post.image"  class="img-fluid"> -->
                     <div class="row">
                         <div class="col-7">

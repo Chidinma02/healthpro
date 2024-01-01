@@ -10,15 +10,66 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="mx-auto">
         <b-nav-item href="#" class="ma ml-5" ><router-link to="/" class="rou">Home</router-link></b-nav-item>
+        <b-nav-item href="#" class="nav-item-for-drop ml-5" >  <li class="ml-5nav-item dropdown dropdown-hover position-static">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-mdb-toggle="dropdown" aria-expanded="false">
+            Mega 
+          </a>
+          <!-- Dropdown menu -->
+          <div class="dropdown-menu w-90 mt-0" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                            border-top-right-radius: 0;
+                          ">
+
+            <div class="container">
+              <div class="row my-4">
+                <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                  <div class="list-group list-group-flush">
+                    <a href="" class="list-group-item list-group-item-action">Anti-histamines</a>
+                    <a href="" class="list-group-item list-group-item-action">Anti Retrovial</a>
+                    <a href="" class="list-group-item list-group-item-action">Anti-biotics</a>
+                    <a href="" class="list-group-item list-group-item-action">Anti platelet</a>
+                    <a href="" class="list-group-item list-group-item-action">Adipisicing elit</a>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                  <div class="list-group list-group-flush">
+                    <a href="" class="list-group-item list-group-item-action">Anti hypentensive</a>
+                    <a href="" class="list-group-item list-group-item-action">Anti-fibrinolytic</a>
+                    <a href="" class="list-group-item list-group-item-action">Anti thrombolytic</a>
+                    <a href="" class="list-group-item list-group-item-action">Blood tonics</a>
+                    <a href="" class="list-group-item list-group-item-action">Provident dolor</a>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+                  <div class="list-group list-group-flush">
+                    <a href="" class="list-group-item list-group-item-action">Disinfectant</a>
+                    <a href="" class="list-group-item list-group-item-action">Dermato-cosmetics</a>
+                    <a href="" class="list-group-item list-group-item-action">Iron Injection</a>
+                    <a href="" class="list-group-item list-group-item-action">Oral Care</a>
+                    <a href="" class="list-group-item list-group-item-action">Laboriosam</a>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="list-group list-group-flush">
+                    <a href="" class="list-group-item list-group-item-action">NSAID</a>
+                    <a href="" class="list-group-item list-group-item-action"></a>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li></b-nav-item>
         <b-nav-item href="# " class="ml-5  mar ma ">
            <router-link to="/about" class="rou">About Us</router-link></b-nav-item>
-        <b-nav-item-dropdown text="Products" right  class="ml-5 mar "  
+
+        <b-nav-item-dropdown text="Products" right  class="ml-5 mar  d-sm-block d-md-none d-md-block d-lg-none" 
     menu-class="w-100">
           <div class="">
-            <div class="col-2"> <b-dropdown-item href="#">EN</b-dropdown-item></div>
-            <div class="col-2"> <b-dropdown-item href="#">ES</b-dropdown-item></div>
-            <div class="col-2"> <b-dropdown-item href="#">RU</b-dropdown-item></div>
-            <div class="col-2"><b-dropdown-item href="#">FA</b-dropdown-item></div>
+            <div class="col-2"> <b-dropdown-item href="#">Anti hypentensive</b-dropdown-item></div>
+            <div class="col-2"> <b-dropdown-item href="#">Anti Retrovial</b-dropdown-item></div>
+            <div class="col-2"> <b-dropdown-item href="#">Anti-biotics</b-dropdown-item></div>
+            <div class="col-2"><b-dropdown-item href="#">Anti platelet</b-dropdown-item></div>
           </div>
           
          
@@ -60,7 +111,6 @@
 
   
 </div>
-
 
 
 
@@ -165,4 +215,24 @@ b-navbar-nav{
 .rou{
   text-decoration: none !important;
 }
+.dropdown-hover:hover>.dropdown-menu {
+display: inline-block;
+}
+
+.dropdown-hover>.dropdown-toggle:active {
+/*Without this, clicking will make it sticky*/
+pointer-events: none;
+}
+@media only screen and (max-width: 600px) {
+  .dropdown-hover:hover>.dropdown-menu{
+    display:block;
+  }
+}
+
+.nav-item-for-drop {
+  margin-top:-8px;
+}
+
+
+
 </style>
