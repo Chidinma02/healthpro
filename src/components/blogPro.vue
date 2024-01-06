@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="font-for-inter">
     <div class="container mt-5 ">
       <div class="row mt-5">
         <div class="col-12">
@@ -85,5 +85,8 @@ export default {
 .he{
   color:#18564C;
   
+}
+.font-for-inter{
+  font-family: facee;
 }
 </style>

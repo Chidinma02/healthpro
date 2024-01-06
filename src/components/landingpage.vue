@@ -4,12 +4,12 @@
       <div class="col-md-6 col-12">
         <div class="ft mt-5">
         
-          <h2 class="mt-5 te">Our love for <span class="humanity">Humanity</span> drives our <span class="passion">passion</span>  for <span class="healthcare">healthcare.</span> </h2>
+          <h2 class="mt-5 te font-for-our-milki">Our love for <span class="humanity">Humanity</span> drives our <span class="passion">passion</span>  for <span class="healthcare">healthcare.</span> </h2>
         <br>
 
         </div>
-        <p>Bridging unmet healthcare need.</p>
-        <button class="btn-lg bt button-nav mar mt-4" style="color:white"  @click="navigateToAbout">View products</button>
+        <p class="font-for-inter">Bridging unmet healthcare need.</p>
+        <button class="btn-lg bt button-nav mar mt-4 font-for-inter " style="color:white"  @click="navigateToAbout">View products</button>
       </div>
       <div class="col-md-6 col-12"><img src="../assets/new.png" class="img-fluid mt-3"></div>
     
@@ -19,9 +19,9 @@
       <div class="row row-color mt-3 container">
        
        <div class="col-lg-5 col-12 mt-5 pt-5">
-        <h5 class="what">What we do</h5>
-        <p class="mt-3">We are a pharmaceutical company focused on the marketing and distribution of pharmaceutical healthcare products. But Also involved in bridging unmet healthcare needs in medical tourism, providing Diagnostic Equipment's for medical institutions and  medical training's( for Medical Personnel & Para-Medics) thereby ensuring a more knowledgeable and skillful health team.</p>
-        <button class="btn-lg bt button-nav mar mt-5" @click="navigateToAbout">Read More</button>
+        <h5 class="what font-for-inter ">What we do</h5>
+        <p class="mt-3 font-for-inter">We are a pharmaceutical company focused on the marketing and distribution of pharmaceutical healthcare products. But Also involved in bridging unmet healthcare needs in medical tourism, providing Diagnostic Equipment's for medical institutions and  medical training's( for Medical Personnel & Para-Medics) thereby ensuring a more knowledgeable and skillful health team.</p>
+        <button class="btn-lg bt button-nav mar mt-5 font-for-inter" @click="navigateToAbout">Read More</button>
       </div>
        <div class="col-lg-7 col-12 mt-5">
         <img src="../assets/Group 3.png" class="img-fluid">
@@ -44,6 +44,20 @@ export default {
 
 <style>
 
+@font-face {
+  font-family: face;
+  src: url(../assets/Millik.otf);
+}
+@font-face {
+  font-family: facee;
+  src: url(../assets/Inter-Regular.otf);
+}
+.font-for-our-milki{
+  font-family: face;
+}
+.font-for-inter{
+  font-family: facee;
+}
 .what{
   color:#D41420;
 }
@@ -81,15 +95,9 @@ h2{
  
 
 }
-
-@font-face {
-  font-family: 'milk'; 
-  src: url('../assets/font/Millik\ Regular.otf') format('otf');
+.te{
      
-  font-weight: normal;
-  font-style: normal;
 }
-*{
-  font-family: 'milk' !important;
-}
+
+
 </style>

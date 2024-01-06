@@ -3,11 +3,11 @@
         <div class="container mt-5 ">
             <div class="row mt-5">
                 <div class="col-12">
-                    <h3 class="text-center tex">Our Partners</h3>
+                    <h3 class="text-center tex font-for-our-milki">Our Partners</h3>
                 </div>
             </div>
            <div class="row">
-              <div class="col-12 container">
+              <div class="col-12 container font-for-inter">
                 <p class="text-center">We partner internationally recognized Pharmaceutical companies across the </p>
                     <p class="text-center">globe. The partners that trust us have huge value for their money. </p>
               </div>
@@ -16,7 +16,7 @@
 
 		</div>
        
-           <div>
+           <div class="mb-5">
             <div class="slider-area f">
 		<h2>Our Clients</h2>
 		<div class="wrapper">
@@ -43,7 +43,13 @@ name:'ourProject'
 </script>
 
 <style>
-
+@font-face {
+  font-family: face;
+  src: url(../assets/Millik.otf);
+}
+.font-for-our-milki{
+  font-family: face;
+}
 .ml{
     margin-right:200px !important;
 	width:220.75px;
@@ -80,7 +86,7 @@ name:'ourProject'
 
 .slider-area h2 {
 	text-align: center;
-	font-family: impact;
+	
 	font-size: 60px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -128,15 +134,9 @@ name:'ourProject'
 
   .tex{
     color:#18564C;
-    font-family: 'Customfont';
+   
     font-weight:bold;
   }
-  @font-face {
-  font-family: 'CustomFont'; /* Provide a name for your font */
-  src: url('../assets/font/Millik\ Regular.otf') format('otf');
-     
-  font-weight: normal;
-  font-style: normal;
-}
+  
  
 </style>

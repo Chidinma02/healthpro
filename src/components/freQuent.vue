@@ -4,12 +4,12 @@
   <div class="container can mt-5">
     <div class="row">
         <div class="col-12 so">
-          <h3 class="de">Frequently asked Questions and Answers</h3>
-          <p>What is on your mind about us</p>
+          <h3 class="de font-for-our-milki">Frequently asked Questions and Answers</h3>
+          <p class="font-for-inter">What is on your mind about us</p>
         </div>
     </div>
   
-  <div class="accordion" role="tablist">
+  <div class="accordion font-for-inter "  role="tablist">
     <b-card no-body class="mb-1">
       <b-card-header header-tag="header" class="p-1" role="tab">
         <P block v-b-toggle.accordion-1 variant="info">+ How do i get my Products delivered to my location.</P>
@@ -74,6 +74,12 @@ export default {
 </script>
 
 <style>
+.font-for-our-milki{
+  font-family: face !important; 
+}
+.font-for-inter{
+  font-family: facee;
+}
 .de{
   color:#18564C;
   

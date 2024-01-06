@@ -1,8 +1,8 @@
 <template>
     
-    <div>
+    <div class="font-for-inter">
      
-      <div class="container">
+      <div class="container font-for-inter">
         <h3 class="mt-5 fea te">Featured Products</h3>
       </div>
         <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -118,7 +118,9 @@ export default {
 </script>
 
 <style>
-
+.font-for-inter{
+  font-family: facee;
+}
  .fea{
 	
   color:#258576;

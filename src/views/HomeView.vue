@@ -20,7 +20,7 @@ import landingPage from '@/components/landingpage.vue';
 import featuredPro from '@/components/featuredPro.vue'; 
 import blogPro from '@/components/blogPro.vue';
 import discoverLanding from '@/components/discoverLanding.vue';
-// import ourProject from '../components/ourProject.vue';
+ import ourProject from '../components/ourProject.vue';
 
 import freQuent from '@/components/freQuent.vue';
 
@@ -31,7 +31,7 @@ export default {
    name: 'HelloView',
              
   components: {
-    landingPage,featuredPro,blogPro,discoverLanding,freQuent,
+    landingPage,featuredPro,blogPro,discoverLanding,freQuent,ourProject
     
   },
 }

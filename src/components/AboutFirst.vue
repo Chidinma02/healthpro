@@ -12,8 +12,8 @@
     <div class="carousel-item active">
       <img class="d-block w-100" src="../assets/Frame 112.png" alt="First slide">
       <div class="carousel-caption ">
-        <h2 class="weoff  d-none d-md-block">We offer a wide range of<br> products and services,</h2>
-    <p class="weoff  d-none d-md-block">medical training , diagnostic equipment,updates on medical breakthrough studies and medical conferences</p>
+        <h2 class="weoff  d-none d-md-block font-for-our-milki">We offer a wide range of<br> products and services,</h2>
+    <p class="weoff  d-none d-md-block font-for-inter">medical training , diagnostic equipment,updates on medical breakthrough studies and medical conferences</p>
    <p class="d-block d-md-none">We offer a wide range of products and services,medical training , diagnostic equipment,updates on medical breakthrough studies</p>
   </div>
     </div>
@@ -54,6 +54,12 @@ export default {
 </script>
 
 <style>
+.font-for-inter{
+  font-family: facee;
+}
+.font-for-our-milki{
+  font-family: face;
+}
 .weoff{
     font-weight: bolder;
 }

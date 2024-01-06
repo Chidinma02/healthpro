@@ -4,9 +4,9 @@
       <div class="row container">
       <div class="col-6 di">
         <div>
-            <h1 class="h1-dis te">Discover a world of healthcare solutions at your fingertips.</h1>
-        <p>Healthline is here to support you on your journey to better health.</p>
-        <button class="btn-lg bt button-nav mar mt-4 text-center">Read More</button>
+            <h1 class="h1-dis te font-for-our-milki">Discover a world of healthcare solutions at your fingertips.</h1>
+        <p class="font-for-inter">Healthline is here to support you on your journey to better health.</p>
+        <button class="btn-lg bt button-nav mar mt-4 text-center font-for-inter">Read More</button>
         </div>
       
       </div>
@@ -50,6 +50,15 @@ export default {
   padding-bottom:10px !important;
   margin:0 !important
 }
-
+@font-face {
+  font-family: facee;
+  src: url(../assets/Inter-Regular.otf);
+}
+.font-for-our-milki{
+  font-family: face;
+}
+.font-for-inter{
+  font-family: facee;
+}
 
 </style>

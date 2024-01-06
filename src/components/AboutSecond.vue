@@ -1,11 +1,12 @@
 <template>
     <div class="container cf">
-      <div class="row container">
-        <div class="col-md-6 c col-12">
+      <div class="row container c">
+        <div class="col-md-6 col-12">
             
-            <p class="he">Healthline Limited is a company registered in 2008 by Pharm Ramchandra Badgujar and Pharm Amara Chikwendu; and located at No, 29 Adeniyi Jones Avenue, Ikeja Lagos, Nigeria. Commercial Operation in the company Started in 2012 with medical tourism business where over 500 patients were treated successfully at the partner Hospital in India.
+            <p class="p-tag-class">Healthline Limited is a company registered in 2008 by Pharm Ramchandra Badgujar and Pharm Amara Chikwendu; and located at No, 29 Adeniyi Jones Avenue, Ikeja Lagos, Nigeria. Commercial Operation in the company Started in 2012 with medical tourism business where over 500 patients were treated successfully at the partner Hospital in India.
 Pharmaceutical importation and distribution started in 2013 and in 2015 Avacare Health International – South Africa joins the company as a strategic investor.</p>
         </div>
+        <div class="col-4"></div>
       </div>
         
     </div>
@@ -19,6 +20,7 @@ export default {
 </script>
 
 <style>
+
 .cf{
     margin-top:50px;
     background-image: url("../assets/Frame 110.png"); 
@@ -30,21 +32,25 @@ export default {
   border-radius:10px;
   
   
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100vh; */
 
 }
-.he{
-    color:white;
-    
+
+
+.p-tag-class{
+  color:white;
 }
 .c{
     display: flex;
   flex-direction: column; 
   justify-content: flex-end; 
   height: 100vh;
+}
+@media (min-width: 769px) and (max-width : 1200px){
+  
 }
 
 </style>

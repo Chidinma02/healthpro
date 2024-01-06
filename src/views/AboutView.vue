@@ -4,8 +4,9 @@
     <AboutFirst></AboutFirst>
     <AboutSecond></AboutSecond>
     <ThirdSecond></ThirdSecond>
-    <AboutThird></AboutThird>
     <ourproject></ourproject>
+    <AboutThird></AboutThird>
+   
   
   </div>
 </template>

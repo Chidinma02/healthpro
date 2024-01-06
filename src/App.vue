@@ -21,11 +21,21 @@ export default {
 *{
   padding: 0px ;
   MARGIN:0px ;
+  
+  font-family: facee;
+
+}
+@font-face {
+  font-family: face;
+  src: url(../src/assets/Millik.otf);
+}
+@font-face {
+  font-family: facee;
+  src: url(../src/assets/Inter-Regular.otf);
 }
 
 #app {
 
-  font-family: 'CustomFont' ;
   
   
 }

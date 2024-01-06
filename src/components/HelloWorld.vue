@@ -1,21 +1,25 @@
 <template>
    <div>
     <div class="container">
+      
     <div class="navb">
   <b-navbar toggleable="lg">
     <b-navbar-brand href="#"><img src="../assets/Frame 8.png" class="img-class"></b-navbar-brand>
 
-    <b-navbar-toggle  type="light" variant="light" target="nav-collapse"></b-navbar-toggle>
+    <b-navbar-toggle  type="light" variant="light" target="nav-collapse" class="mb-2"></b-navbar-toggle>
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="mx-auto">
         <b-nav-item href="#" class="ma ml-5" ><router-link to="/" class="rou">Home</router-link></b-nav-item>
+        <b-nav-item href="# " class="ml-5 ma ">
+           <router-link to="/about" class="rou mar">About Us</router-link></b-nav-item>
         <b-nav-item href="#" class="nav-item-for-drop ml-5" >  <li class="ml-5nav-item dropdown dropdown-hover position-static">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+          <a class="nav-link dropdown-toggle d-none d-lg-block d-xl-block d-xxl-block" href="#" id="navbarDropdown" role="button"
             data-mdb-toggle="dropdown" aria-expanded="false">
-            Mega 
+            Products
           </a>
           <!-- Dropdown menu -->
+
           <div class="dropdown-menu w-90 mt-0" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
                             border-top-right-radius: 0;
                           ">
@@ -60,8 +64,7 @@
             </div>
           </div>
         </li></b-nav-item>
-        <b-nav-item href="# " class="ml-5  mar ma ">
-           <router-link to="/about" class="rou">About Us</router-link></b-nav-item>
+       
 
         <b-nav-item-dropdown text="Products" right  class="ml-5 mar  d-sm-block d-md-none d-md-block d-lg-none" 
     menu-class="w-100">
@@ -70,6 +73,17 @@
             <div class="col-2"> <b-dropdown-item href="#">Anti Retrovial</b-dropdown-item></div>
             <div class="col-2"> <b-dropdown-item href="#">Anti-biotics</b-dropdown-item></div>
             <div class="col-2"><b-dropdown-item href="#">Anti platelet</b-dropdown-item></div>
+            <div class="col-2"><b-dropdown-item href="#">Anti hypentensive</b-dropdown-item></div>
+            <div class="col-2"><b-dropdown-item href="#">Anti-fibrinolytic</b-dropdown-item></div>
+            <div class="col-2"><b-dropdown-item href="#">Anti thrombolytic</b-dropdown-item></div>
+            <div class="col-2"><b-dropdown-item href="#">Blood tonics</b-dropdown-item></div>
+            <div class="col-2"><b-dropdown-item href="#">Provident dolor</b-dropdown-item></div>
+            <div class="col-2"><b-dropdown-item href="#">Disinfectant</b-dropdown-item></div>
+            <div class="col-2"><b-dropdown-item href="#">Dermato-cosmetics</b-dropdown-item></div>
+            <div class="col-2"><b-dropdown-item href="#">Iron Injection</b-dropdown-item></div>
+            <div class="col-2"><b-dropdown-item href="#">Oral Care</b-dropdown-item></div>
+            <div class="col-2"><b-dropdown-item href="#">Laboriosam</b-dropdown-item></div>
+            <div class="col-2"><b-dropdown-item href="#">NSAID</b-dropdown-item></div>
           </div>
           
          
@@ -131,11 +145,14 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-
+.font-for-inter{
+  font-family: facee;
+}
 /* Ensure the dropdown menu is full width */
 .custom-dropdown-menu .container-fluid {
   width: 100%;
 }
+
 
 /* Optional: Style the dropdown toggle as per your design */
 .navbar .nav-link.dropdown-toggle {
@@ -149,16 +166,6 @@ export default {
    left:20; 
    width: 100%;
 }
-/* *{ */
-  /* font-family:"CustomFont" */
-/* } */
-/* @font-face {
-  font-family: 'CustomFont'; /* Provide a name for your font */
-  /* src: url('../assets/font/Inter-VariableFont_slnt\,wght.ttf') format('ttf');
-     
-  font-weight: normal;
-  font-style: normal;
-} */
 
 .vr{
   width:100v;
@@ -170,7 +177,7 @@ export default {
 }
 *{
   color:black !important;
-  font-weight:100 !important;
+  font-weight:400 !important;
   font-size: 16px !important;
 }
 
@@ -185,9 +192,7 @@ b-navbar-nav{
 .navb{
   color:blue !important
 }
-.navbar-nav{
 
-}
 .img-class{
   width: 183.58px;
       height: 19.16px;
@@ -198,7 +203,7 @@ b-navbar-nav{
 }
 *{
   background-color:white;
-  font-family: 'CustomFont';
+  
 }
 .button-nav{
   background-color: #258576;
@@ -209,9 +214,12 @@ b-navbar-nav{
   color:white !important;
   font-size: 16px !important;
 }
-.mar{
+@media (min-width: 992px) and (max-width : 1200px){
+  .mar{
   margin-left:20px;
 }
+}
+
 .rou{
   text-decoration: none !important;
 }
